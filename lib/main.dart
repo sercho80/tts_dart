@@ -10,7 +10,9 @@ class TheApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: MyApp(),
+        backgroundColor: Colors.purple[300],
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -35,7 +37,7 @@ class MyApp extends StatelessWidget {
             controller: txt,
           ),
           RaisedButton(
-            child: Text("TTS"),
+            child: Text("Pulsa para hablar"),
             onPressed: () => _speak(txt.text),
           ),
         ]));
